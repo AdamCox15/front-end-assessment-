@@ -11,7 +11,14 @@ const favRit = (event) => {
     alert('My Favorite Ritual is my Bedtime Ritual');
 }
 
+const submitForm = (event) => {
+    event.preventDefault();
+
+    alert('incorrect they are the best hockey teams');
+}
+
 
 document.querySelector('#color').addEventListener('click', favColor);
 document.querySelector('#place').addEventListener('click', favPlace);
 document.querySelector('#ritual').addEventListener('click', favRit);
+document.querySelector('.hockey').addEventListener('submit', submitForm);
